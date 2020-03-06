@@ -1,0 +1,67 @@
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ramicane(TM)</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light  bg-info">
+			
+			<span>
+			<a class="navbar-brand bg-info" href="landing.html">Ramicane(TM)</a>
+			</span>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="nav navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots</a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="viz1.html">Tumor Size Reduction</a>
+						<a class="dropdown-item" href="viz2.html">%Survival Rate</a>
+						<a class="dropdown-item" href="viz3.html">Metastatic Site Spread</a>
+						<a class="dropdown-item" href="viz4.html">Tumor Response to Treatment</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="allviz.html">All Plots</a>
+					  </div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link " href="allviz.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="data.html">Data</a>
+				</li>
+			  </ul>
+			</div>
+		</nav>
+		
+		<div class="container-fluid">
+			<div class = "row">
+				
+				<!--Create a container for the table to go in-->
+				<div class="col-sm-12">
+					<div class = "card">
+						<div class = "card-body">
+							<h1 class="card-title">Stage 1 Clinical Trial Results: Raw Data</h1>
+										<div class = "row">
+										'<table border="1" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>Tumor Volume (mm3)_Capomulin</th>      <th>Metastatic Sites_Capomulin</th>      <th>Tumor Volume (mm3)_Infubinol</th>      <th>Metastatic Sites_Infubinol</th>      <th>Tumor Volume (mm3)_Ketapril</th>      <th>Metastatic Sites_Ketapril</th>      <th>Tumor Volume (mm3)_Ramicane</th>      <th>Metastatic Sites_Ramicane</th>      <th>Tumor Volume (mm3)_Placebo</th>      <th>Metastatic Sites_Placebo</th>    </tr>    <tr>      <th>Timepoint</th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>45.0</td>      <td>0.0</td>      <td>45.0</td>      <td>0.0</td>      <td>45.0</td>      <td>0.0</td>      <td>45.0</td>      <td>0.0</td>      <td>45.0</td>      <td>0.0</td>    </tr>    <tr>      <th>5</th>      <td>44.3</td>      <td>0.2</td>      <td>47.1</td>      <td>0.3</td>      <td>47.4</td>      <td>0.3</td>      <td>43.9</td>      <td>0.1</td>      <td>47.1</td>      <td>0.4</td>    </tr>    <tr>      <th>10</th>      <td>43.1</td>      <td>0.3</td>      <td>49.4</td>      <td>0.7</td>      <td>49.6</td>      <td>0.6</td>      <td>42.5</td>      <td>0.2</td>      <td>49.4</td>      <td>0.8</td>    </tr>    <tr>      <th>15</th>      <td>42.1</td>      <td>0.4</td>      <td>51.3</td>      <td>0.9</td>      <td>52.4</td>      <td>0.8</td>      <td>41.5</td>      <td>0.3</td>      <td>51.4</td>      <td>1.2</td>    </tr>    <tr>      <th>20</th>      <td>40.7</td>      <td>0.7</td>      <td>53.2</td>      <td>1.0</td>      <td>54.9</td>      <td>1.2</td>      <td>40.2</td>      <td>0.3</td>      <td>54.4</td>      <td>1.5</td>    </tr>    <tr>      <th>25</th>      <td>39.9</td>      <td>0.8</td>      <td>55.7</td>      <td>1.3</td>      <td>57.7</td>      <td>1.6</td>      <td>39.0</td>      <td>0.7</td>      <td>57.5</td>      <td>1.9</td>    </tr>    <tr>      <th>30</th>      <td>38.8</td>      <td>1.1</td>      <td>58.3</td>      <td>1.6</td>      <td>61.0</td>      <td>2.1</td>      <td>38.7</td>      <td>0.8</td>      <td>59.8</td>      <td>2.3</td>    </tr>    <tr>      <th>35</th>      <td>37.8</td>      <td>1.2</td>      <td>60.7</td>      <td>1.7</td>      <td>63.4</td>      <td>2.3</td>      <td>37.5</td>      <td>1.0</td>      <td>62.4</td>      <td>2.6</td>    </tr>    <tr>      <th>40</th>      <td>37.0</td>      <td>1.4</td>      <td>63.2</td>      <td>2.1</td>      <td>66.1</td>      <td>2.7</td>      <td>36.6</td>      <td>1.1</td>      <td>65.1</td>      <td>3.2</td>    </tr>    <tr>      <th>45</th>      <td>36.2</td>      <td>1.5</td>      <td>65.8</td>      <td>2.1</td>      <td>70.7</td>      <td>3.4</td>      <td>35.0</td>      <td>1.2</td>      <td>68.1</td>      <td>3.3</td>    </tr>  </tbody></table>'
+									</div>
+						</div>
+					</div>
+				</div>	
+		
+		
+		
+		
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,55 @@
+
+
+
+/*Set background color to a nice grey*/
+body {
+	background-color : #aaaaaa;
+}
+/*format the left picture on the landing page*/
+.landingpic{
+margin-left: 20px;
+margin-right: 20px;
+}
+/*format the citation under the pic on the landing page*/
+.pic-citation{
+text-align: left;
+padding-left: 20px;
+}
+/*format the navbar brand name*/
+.navbar-brand {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/*formatting for things inside containers here*/
+.container {background-color: #ffffff;}
+.px-4 {
+  padding-left: ($spacer* 1.5) !important;
+  padding-right: ($spacer * 1.5) !important;
+}
+
+/*Set card-related formatting here*/
+.card-title{text-align: center;}
+.card-subtitle{	text-align: center;}
+.card-text{font-size: 22px;}
+.photo-box{text-align:center;}
+
+
+/*Format table*/
+/*zebrastripe*/
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+
+td, tr{border: none;}
+
+
+
+/*Media parameter to set stying based on screen sizes*/
+/*On larger screens the plots on the comparison page are allowed to float to the outside of their respective boxes, however for screen sizes where the plots are stacked this results in a "staggered" look*/
+
+@media (min-width: 544px) {.card-columns {-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;}}
+@media (min-width: 768px) {.card-columns {-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;}}
+@media (min-width: 992px) {.card-columns {-webkit-column-count: 2; -moz-column-count: 2; column-count: 2;}}
+@media (min-width: 1200px) {.card-columns {-webkit-column-count: 2; -moz-column-count: 2; column-count: 2;}}
+
